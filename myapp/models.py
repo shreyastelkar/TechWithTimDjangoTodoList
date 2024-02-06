@@ -14,6 +14,7 @@ class TodoItem(models.Model):
 class Item(models.Model):
     todolist = models.ForeignKey(TodoItem, on_delete=models.CASCADE)
     text = models.CharField(max_length=300)
+    complete = models.BooleanField(default=False)
 
     def __str__(self) -> str:
         return self.text
