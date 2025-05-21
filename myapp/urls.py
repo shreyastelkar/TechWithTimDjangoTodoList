@@ -8,6 +8,5 @@ urlpatterns = [
     path("<int:id>", views.index, name="index"),
     path("form/", views.create, name="form"),
     
-    
 ]
 
